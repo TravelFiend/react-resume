@@ -1,6 +1,5 @@
 import React from 'react';
 import { about, techKnowledge, education } from '../../resume.json';
-import EducationItem from './EducationItem';
 import styles from './RightCol.css';
 
 const RightCol = () => {
@@ -10,11 +9,24 @@ const RightCol = () => {
     </li>
   ));
 
-  const educationElements = education.map((school, i) => (
-    <li key={i} className={styles.Education}>
-      <EducationItem school={school.school} focus={school.focus} achievements={school.achievements} />
-    </li>
-  );
+  let achievementElements;
+  const educationElements = education.map((school, i) => {
+    if(school.achievements){
+      achievementElements = school.achievements.map((achievement, i) => (
+        <li key={i}>{achievement}</li>
+      ));
+    }
+    
+    return (
+      <li key={i} className={styles.Education}>
+        <h4>{school.school}</h4>
+        <p>{school.focus}</p>
+        <ul>
+          {achievementElements}
+        </ul>
+      </li>
+    );
+  });
 
   return (
     <div className={styles.RightCol}>
