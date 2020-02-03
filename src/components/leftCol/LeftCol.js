@@ -11,6 +11,10 @@ const LeftCol = () => {
     </li>
   ));
 
+  const achievementElements = work.achievements.map((achievement, i) => (
+    <li key={i}>{achievement}</li>
+  ));
+
   return (
     <section className={styles.LeftCol}>
       <h2>Projects</h2>
@@ -24,7 +28,7 @@ const LeftCol = () => {
       </h3>
       <h4>{work.title}</h4>
       <ul>
-        {}
+        {achievementElements}
       </ul>
     </section>
   );
