@@ -1,3 +1,7 @@
 .Header {
     background: red;
+
+    img {
+        height: 25px;
+    }
 }
