@@ -1,5 +1,5 @@
 import React from 'react';
-import githubLogo from '../../../assets/githubLogo.jpg';
+import githubLogo from '../../../assets/githubLogo.png';
 import { header } from '../../resume.json';
 import styles from './Header.css';
 

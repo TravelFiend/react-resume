@@ -1,10 +1,35 @@
 import React from 'react';
+import { about, techKnowledge, education } from '../../resume.json';
+import EducationItem from './EducationItem';
 import styles from './RightCol.css';
 
-const RightCol = () => (
-  <div className={styles.RightCol}>
-    <p>Platypus</p>
-  </div>
-);
+const RightCol = () => {
+  const techElements = techKnowledge.map((item, i) => (
+    <li key={i} className={styles.TechKnowledge}>
+      {item}
+    </li>
+  ));
+
+  const educationElements = education.map((school, i) => (
+    <li key={i} className={styles.Education}>
+      <EducationItem school={school.school} focus={school.focus} achievements={school.achievements} />
+    </li>
+  );
+
+  return (
+    <div className={styles.RightCol}>
+      <h2>Background &amp; Profile</h2>
+      <p>{about}</p>
+      <h2>Tech Knowledge</h2>
+      <ul>
+        {techElements}
+      </ul>
+      <h2>Academic Background</h2>
+      <ul>
+        {educationElements}
+      </ul>
+    </div>
+  );
+};
 
 export default RightCol;
