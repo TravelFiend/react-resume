@@ -1,0 +1,54 @@
+{
+  "header": {
+    "image": "",
+    "name": "Mike Grace",
+    "phone": "440-829-5501",
+    "email": "mikegrace274@gmail.com",
+    "github": "github.com/TravelFiend",
+    "linkedIn": "linkedin.com/in/mikeegrace"
+  },
+  "projects": [
+    {
+      "name": "CovrLettr",
+      "stack": "Vanilla JavaScript, MongoDB, Mongoose, Express, Jest, NodeJS",
+      "desc": "A cover letter generator that takes user input for a series of questions and creates up to a million unique cover letters and returns the version with the highest sentiment score."
+    },{
+      "name": "Columns and Rogues",
+      "stack": "HTML, CSS, Vanilla Javascript, NodeJS, Express, PostgreSQL",
+      "desc": "Rogue-like game where the objective is to reach the hidden door.  The user will fight monsters and discover gold and items, with each level increasing the board size."
+    },{
+      "name": "Notable Notes",
+      "stack": "HTML, CSS, Vanilla Javascript, NodeJS, Express, MongoDB, Mongoose, JWT, BCryptJS",
+      "desc": "Simple note taking app that allows users to keep notes separated by subject.  The notes persist for each user upon login/out by utilizing a database."
+    },{
+      "name": "Offbeat",
+      "stack": "HTML, CSS, Vanilla Javascript",
+      "desc": "A sound sampler using Web Audio API that allows users to choose from multiple sound banks.  Once logged in, the user can record note combinations and play the same sequence back using different sound banks."
+    }
+  ],
+  "work": {
+    "company": "Sykes Enterprises",
+    "location": "Denver, CO",
+    "startDate": "October 2012",
+    "endDate": "July 2018",
+    "title": "IT Logistics Specialist",
+    "achievements": [
+      "Maintained inventory by updating spreadsheets and asset management system", 
+      "Performed system inspections and provided detailed inspection notes",
+      "Imaged multiple system types for deployment and repaired systems when possible"]
+  },
+  "about": "Full-stack software developer with a focus on the front-end and a drive to create enjoyable UI and memorable UX. With a history in fine arts, I have cultivated a keen eye for detail and pleasing aesthetics.  I am devoted to growing and nurturing my technical knowledge, and eagerly anticipate finding creative ways to solve problems.",
+  "techKnowledge": [
+    "HTML", "QUnit", "CSS", "Jest", "JavaScript", "Postman", "NodeJS", "Compass", "Express", "TravisCI", "MongoDB", "Heroku", "Mongoose", "Git/Github", "React", "Redux"
+  ],
+  "education": [
+    {
+    "school": "Alchemy Code Lab",
+    "focus": "Full-Stack Software Development 2020"
+    },{
+      "school": "Ohio University",
+      "focus": "BFA in Printmaking 2011",
+      "achievements": ["Awarded scholarship for summer printmaking workshop at Anderson Ranch Arts Center, Snowmass Village, CO- Summer 2009", "Artist assistant for Cyndi Wish, Associate Director of Truro Center for the Arts at Castle Hill.", "Assisted with production of large-scale woodcut, variable edition"]
+    }
+  ]
+}
